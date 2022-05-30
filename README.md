@@ -1,5 +1,5 @@
 # SLAPExample
-This repository show single level of abstration principle examples
+This repository show single level of abstraction principle examples
 
 
 
