@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SLAPExample", "SLAPExample\SLAPExample.csproj", "{274EEB97-FBF6-4920-83B1-90BE72A9C3CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{274EEB97-FBF6-4920-83B1-90BE72A9C3CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{274EEB97-FBF6-4920-83B1-90BE72A9C3CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{274EEB97-FBF6-4920-83B1-90BE72A9C3CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{274EEB97-FBF6-4920-83B1-90BE72A9C3CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {577D7258-40C1-459E-953B-6528E0DA7170}
+	EndGlobalSection
+EndGlobal
