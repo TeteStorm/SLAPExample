@@ -6,7 +6,6 @@
         private const int FileLength = 15;
         public static bool IsValidExtension(this string file)
         {
-            
             return file.Trim().Substring(file.IndexOf(".", StringComparison.Ordinal), FileExtension.Length) == FileExtension;
         }
 

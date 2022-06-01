@@ -17,7 +17,7 @@ namespace SLAPExample
             {
                 var weatherReport = ReadWeatherReport(file.FullName);
 
-                if (IsValidWeatherReport(weatherReport))
+                if (WeatherReportHasData(weatherReport))
                 {
                     MapToReportDto(weatherDtoList, weatherReport);
                 }
@@ -27,7 +27,7 @@ namespace SLAPExample
 
             static FileInfo? GetWeatherReportFile(string directoryName)
             {
-                var di = new DirectoryInfo(directoryName); 
+                var di = new DirectoryInfo(directoryName);
                 return di.Exists && di.GetFiles("*.json").Any() ? di.GetFiles().FirstOrDefault() : null;
             }
 
@@ -43,11 +43,11 @@ namespace SLAPExample
                 return JsonConvert.DeserializeObject<WeatherDataModel[]>(File.ReadAllText(file)) ?? Array.Empty<WeatherDataModel>();
             }
 
-            static bool IsValidWeatherReport(WeatherDataModel[] weatherReport)
+            static bool WeatherReportHasData(WeatherDataModel[] weatherReport)
             {
                 return weatherReport is { Length: > 0 };
             }
-              
+
 
             static void MapToReportDto(List<WeatherDataDto> weatherDtoList, IEnumerable<WeatherDataModel> weatherReport)
             {

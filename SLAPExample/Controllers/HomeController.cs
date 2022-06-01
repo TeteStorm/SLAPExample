@@ -17,7 +17,7 @@ namespace SLAPExample.Controllers
 
         public IActionResult Index()
         {
-           // var data = ParseWithSlapViolation.GetWeatherReport();
+            // var data = ParseWithSlapViolation.GetWeatherReport();
             var data = ParseWithSlapByLocalFunctions.GetWeatherReport("Data");
             return View(data);
         }
